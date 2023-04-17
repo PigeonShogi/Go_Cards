@@ -15,7 +15,3 @@
 # U6 Go Support in VSCode
 在 VSCode 編寫 Go 以前，先安裝 Go 同名延伸模組，然後注意 VSCode 右下角提示 Analysis Tools Missing，
 點擊之並安裝所需檔案。
-# U7
-# U8
-# U9
-# U0
