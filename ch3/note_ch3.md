@@ -43,7 +43,19 @@ func main(){
 }
 ```
 
-# U16
+# U16 Functions and Return Types
+函式宣告：
+func 函式名稱 () 回傳型別 {
+    return 回傳值
+}
+
+func newCard() string {
+	return "Five of Diamonds"
+}
+
+測驗3
+函式宣告有提升作用，宣告及調用順序可以顛倒。
+同一 package 的不同檔案可共用彼此的函式，且不需編寫表示引用的代碼。
 
 # U17
 
