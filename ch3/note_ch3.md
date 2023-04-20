@@ -57,7 +57,34 @@ func newCard() string {
 函式宣告有提升作用，宣告及調用順序可以顛倒。
 同一 package 的不同檔案可共用彼此的函式，且不需編寫表示引用的代碼。
 
-# U17
+# U17 Slice and For Loops
+Go 有兩種陣列
+- Array: Fixed length list of things
+- Slice: An array that can grow or shrink
+
+Slice 的值必須是相同的型別
+
+## 宣告變數並賦予 Slice 為其值
+
+    變數名稱 := []型別{值1, 值2, 值3,...}
+	cards := []string{"Ace of Diamonds", newCard()}
+
+## Slice 插入新值
+
+    變數名稱 = append(變數名稱, 插入的值)
+	cards = append(cards, "Six of Spades")
+
+以上操作不會對原本的 Slice 造成變動，而是產生一個新的 Slice 給變數 cards
+
+## Slice For Loop 迴圈
+
+    for 陣列索引值, 目前迭代標的 := range 陣列{
+        欲執行的代碼
+    }
+
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
 
 # U18
 
