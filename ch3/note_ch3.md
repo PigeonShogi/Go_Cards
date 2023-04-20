@@ -88,6 +88,22 @@ Slice 的值必須是相同的型別
 
 # U18
 # U19 Custom Type Declarations
+# U20 Receiver Functions
+在 func 關鍵詞與函式名稱之間加入圓括弧，
+其中依序填入 type 實體的簡稱（慣例是一或二個英文字母），以及 type 名稱。
+經此設定後，綁定 Receiver 的 每個 type 實體即可使用 Receiver Function 
+```Go
+/*
+func (type實體 type名稱) 函式名稱(引數) {
+	for i, value := range type實體 {
+		fmt.Println(i, value)
+	}
+}
+*/ 
 
-
-# U20
+func (d deck) print() {
+	for i, card := range d {
+		fmt.Println(i, card)
+	}
+}
+```
