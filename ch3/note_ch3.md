@@ -107,3 +107,29 @@ func (d deck) print() {
 	}
 }
 ```
+
+測驗5
+以下代碼合法。
+```Go
+package main
+import "fmt"
+type book string
+func (b book) printTitle() {
+    fmt.Println(b)
+}
+func main() {
+    var b book = "Harry Potter"
+    b.printTitle()
+}
+```
+# U21 Creating a New Deck
+
+# U22
+# U23
+# U24
+# U25
+# U26
+# U27
+# U28
+# U29
+# U3
